@@ -32,10 +32,10 @@ export default function Header(props: {
   const [openDrawer, setOpenDrawer] = useState(false);
 
   return (
-    <>
+    <Box sx={{ borderBottom: "1.2px groove #212121" }}>
       <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static" elevation={0} color="transparent">
-          <Toolbar sx={{ borderBottom: "1.2px groove #212121" }}>
+          <Toolbar>
             <Container>
               <Box sx={{ display: "flex", alignItems: "center" }}>
                 <IconButton
@@ -44,7 +44,7 @@ export default function Header(props: {
                   color="inherit"
                   aria-label="menu"
                   sx={{ mr: 2, display: { xs: "block", md: "none" } }}
-                  onClick={() => setOpenDrawer(true)}
+                  onClick={() => setOpenDrawer(!openDrawer)}
                 >
                   <MenuIcon />
                 </IconButton>
@@ -75,7 +75,26 @@ export default function Header(props: {
           </Toolbar>
         </AppBar>
       </Box>
-      <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)}>
+      <Box sx={{ px: 1, display: openDrawer ? "block" : "none" }}>
+        <List>
+          {navLinks.map((link, index) => (
+            <ListItem
+              key={index}
+              disablePadding
+              onClick={() => {
+                handleClick?.(link);
+                setOpenDrawer(false);
+              }}
+              sx={{ backgroundColor: "whitesmoke", mb: 1 }}
+            >
+              <ListItemButton>
+                <ListItemText primary={link} sx={{ textAlign: "center" }} />
+              </ListItemButton>
+            </ListItem>
+          ))}
+        </List>
+      </Box>
+      {/* <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)}>
         <Box
           sx={{ width: 250 }}
           role="presentation"
@@ -99,7 +118,7 @@ export default function Header(props: {
             ))}
           </List>
         </Box>
-      </Drawer>
-    </>
+      </Drawer> */}
+    </Box>
   );
 }

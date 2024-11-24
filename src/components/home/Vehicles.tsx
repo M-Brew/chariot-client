@@ -77,7 +77,7 @@ export default function Vehicles() {
               alt="vehicle-type"
               src={vehicleTypes[currentIndex].image}
               fill
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: "cover", borderRadius: "5px" }}
             />
           </Box>
         </Grid>

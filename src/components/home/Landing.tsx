@@ -58,7 +58,7 @@ export default function Landing(props: { onBook?: () => void }) {
                 alt="landing"
                 src={imageSrc}
                 fill
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "cover", borderRadius: "5px" }}
               />
             </Box>
           </Grid>

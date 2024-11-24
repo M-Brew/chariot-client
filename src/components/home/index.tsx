@@ -6,6 +6,9 @@ import Box from "@mui/material/Box";
 import Dialog from "@mui/material/Dialog";
 import DialogTitle from "@mui/material/DialogTitle";
 import DialogContent from "@mui/material/DialogContent";
+import Fab from "@mui/material/Fab";
+
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
@@ -45,7 +48,7 @@ export default function Home() {
   };
 
   return (
-    <>
+    <Box sx={{ position: "relative" }}>
       <Box>
         <Box
           ref={topRef}
@@ -102,7 +105,25 @@ export default function Home() {
           <Reviews />
           <Footer handleClick={handleClick} onBook={() => setOpen(true)} />
         </Box>
+        <Fab></Fab>
       </Box>
+      <Fab
+        size="small"
+        sx={{
+          position: "fixed",
+          bottom: 10,
+          right: 10,
+          bgcolor: "#212121",
+          color: "white",
+          "&:hover": {
+            // bgcolor: "#212121",
+            color: "#212121",
+          },
+        }}
+        onClick={() => handleClick("")}
+      >
+        <KeyboardArrowUpIcon fontSize="small" />
+      </Fab>
 
       <Dialog open={open} onClose={() => setOpen(false)} fullWidth>
         <DialogTitle>Book a ride</DialogTitle>
@@ -110,6 +131,6 @@ export default function Home() {
           <BookRideForm handleClose={() => setOpen(false)} />
         </DialogContent>
       </Dialog>
-    </>
+    </Box>
   );
 }
