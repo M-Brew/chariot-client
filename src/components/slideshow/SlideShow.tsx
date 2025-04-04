@@ -40,7 +40,7 @@ export default function SlideShow() {
   const [[page, direction], setPage] = useState([0, 0]);
 
   // const imageIndex = wrap(0, images.length, page);
-  const imageIndex = (0 + page) % images.length;
+  // const imageIndex = (0 + page) % images.length;
 
   const paginate = (newDirection: number) => {
     setPage([page + newDirection, newDirection]);
@@ -51,7 +51,7 @@ export default function SlideShow() {
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
           key={page}
-          src={images[imageIndex]}
+          src={images[page % images.length]}
           custom={direction}
           variants={variants}
           initial="enter"
@@ -73,6 +73,7 @@ export default function SlideShow() {
               paginate(-1);
             }
           }}
+          style={{ height: "100%", width: "100%" }}
         />
       </AnimatePresence>
       <div className="next" onClick={() => paginate(1)}>

@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Car Types",
+    "slug": "car-types"
+  },
+  {
+    "title": "Client Types",
+    "slug": "client-types"
+  },
+  {
+    "title": "Driver Types",
+    "slug": "driver-types"
+  },
+  {
+    "title": "Ride Types",
+    "slug": "ride-types"
+  }
+]

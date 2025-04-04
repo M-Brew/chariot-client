@@ -3,17 +3,18 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid2";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import Image from "next/image";
+// import Image from "next/image";
+import SlideShow from "../slideshow/SlideShow2";
 
 export default function Landing(props: { onBook?: () => void }) {
   const { onBook } = props;
 
-  const imageSrc =
-    "https://images.unsplash.com/photo-1705624843697-4461f9dce482?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+  // const imageSrc =
+  //   "https://images.unsplash.com/photo-1705624843697-4461f9dce482?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
   return (
     <Container
-      sx={{ minHeight: "90vh", display: "flex", alignItems: "center" }}
+      sx={{ minHeight: "91vh", display: "flex", alignItems: "center" }}
     >
       <Box>
         <Grid container spacing={2}>
@@ -30,7 +31,7 @@ export default function Landing(props: { onBook?: () => void }) {
                 fontSize={{ xs: "32px", md: "3.75rem" }}
                 mt={{ xs: 2, sm: 0 }}
               >
-                Lorem ipsum dolor sit, amet consectetur.
+                Car rental solutions for your every need
               </Typography>
             </Box>
           </Grid>
@@ -45,7 +46,7 @@ export default function Landing(props: { onBook?: () => void }) {
               </Button>
             </Box>
           </Grid>
-          <Grid size={12} pt={3}>
+          {/* <Grid size={12} pt={3}>
             <Box
               sx={{
                 width: "100%",
@@ -60,6 +61,11 @@ export default function Landing(props: { onBook?: () => void }) {
                 fill
                 style={{ objectFit: "cover", borderRadius: "5px" }}
               />
+            </Box>
+          </Grid> */}
+          <Grid size={12} pt={3}>
+            <Box sx={{ height: "55vh", width: "80vw" }}>
+              <SlideShow />
             </Box>
           </Grid>
         </Grid>

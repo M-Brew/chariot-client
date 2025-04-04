@@ -9,25 +9,28 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.13.3",
-    "@emotion/styled": "^11.13.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
-    "@mui/icons-material": "^6.1.6",
-    "@mui/material": "^6.1.6",
-    "@mui/x-date-pickers": "^7.22.2",
+    "@mui/icons-material": "^6.4.8",
+    "@mui/material": "^6.4.8",
+    "@mui/x-date-pickers": "^7.28.0",
+    "axios": "^1.8.4",
     "dayjs": "^1.11.13",
-    "framer-motion": "^11.11.11",
-    "next": "15.0.2",
-    "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028"
+    "formik": "^2.4.6",
+    "framer-motion": "^12.5.0",
+    "next": "15.2.3",
+    "react": "19.0.0",
+    "react-dom": "19.0",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "15.0.2",
-    "typescript": "^5"
+    "@types/node": "^22.13.10",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "eslint": "^9.22.0",
+    "eslint-config-next": "15.2.3",
+    "typescript": "^5.8.2"
   }
 }

@@ -7,32 +7,32 @@ const services = [
   {
     title: "Day Trips",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, quasi molestias atque nesciunt dolorem earum optio nostrum sequi ratione expedita.",
+      "We offer rides ranging from SUVs to multiple dozen seats for day trips to resorts and other destinations with friends and loved ones.",
   },
   {
     title: "Chauffeur Services",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, quasi molestias.",
+      "Recurring chauffeur services with convenient rides with punctual and well trusted drivers.",
   },
   {
     title: "Party Bus",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, quasi molestias atque nesciunt dolorem earum.",
+      "Well equipped buses with trusted drivers for party trips with family and friends.",
   },
   {
     title: "Corporate Trips",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, quasi molestias atque nesciunt dolorem earum optio nostrum sequi ratione expedita.",
+      "We have suitable solutions for corporate retreats, trips and inner/inter city business travels.",
   },
   {
     title: "Hikes",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, quasi molestias.",
+      "Plans on outer region visits to embark on hikes or other activities? We offer ideal solutions for that.",
   },
   {
     title: "Tour Buses",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, quasi molestias atque nesciunt dolorem earum.",
+      "Looking to visit multiple tour destinations in multiple regions with family and/or friends? We have the right rides and chauffeurs for this.",
   },
 ];
 
